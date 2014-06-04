@@ -9,5 +9,6 @@ app.get('/', function(req, res){
   res.render('index.html');
 });
 
-app.listen(3000);
+var port = Number(process.env.PORT || 5000);
+app.listen(port);
 console.log("Your app is running on Port 3000!");
